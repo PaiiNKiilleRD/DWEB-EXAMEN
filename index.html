@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <style type="text/tailwindcss">
+    .h2 {
+        @apply text-2xl lg:text-4xl font-bold
+    }
+    
+    .h3 {
+        @apply text-xl lg:text-2xl font-bold
+    }</style>
+    <title>TITLE</title>
+</head>
+
+<body class="bg-[#09f] px-5 lg:px-20">
+    <nav class="absolute top-0 right-0 flex items-center justify-between w-full px-5 py-5 font-medium lg:px-20">
+        <h1 class="h1">Javier Peralta</h1>
+        <ul class="flex items-center justify-center gap-4">
+            <li>Experiencia</li>
+            <li>Proyectos</li>
+            <li>Youtube</li>
+        </ul>
+    </nav>
+    <main>
+        <section class="flex flex-col items-center justify-center w-full gap-4 lg:h-screen">
+            <div
+                class="w-[320px] h-[320px] rounded-full overflow-hidden  border-3 border-transparent hover:border-green-500 transition-all duration-500 ease-in-out">
+                <img src="https://unavatar.io/PaiiNKiilleRD" alt="Ejemplo de Imagen" />
+            </div>
+            <div class="flex flex-col items-center justify-center w-full mx-auto ">
+                <p class="mb-5 text-3xl font-medium opacity-80">Programador Web</p>
+                <div class="flex ">
+                    <a href="https://github.com/PaiiNKiilleRD"
+                        class="flex items-center justify-center gap-2 px-5 py-3 font-bold">
+                        Visita mi Github
+                        <iconify-icon icon="mdi:github"></iconify-icon>
+                    </a>
+                    <a href="" class="px-5 py-3 font-bold text-white bg-sky-500 rounded-xl">Descarga mi CV</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <article>
+                <h2 class="h2">Experiencia Laboral</h2>
+                <h3>DevSoftware 2026 - Actualidad</h3>
+                <p>Programador</p>
+
+            </article>
+
+            <article class="bg-[#FBFBF8] p-8 flex flex-col justify-center items-center rounded-lg shadow-md">
+                <h2 class="mb-8 h2">Tecnologias Utilizadas</h2>
+                <ol class="flex items-center justify-center gap-10 [&>li]:text-2xl [&>li]:flex [&>li]:items-center 
+                [&>li]:justify-evenly mx-auto [&>li]:gap-2 [&li>]:font-medium ">
+                    <li>HTML5 <iconify-icon icon="logos:html-5"></iconify-icon></li>
+                    <li>CSS3 <iconify-icon icon="devicon:css3-wordmark"></iconify-icon></li>
+                    <li>JavaScript <iconify-icon icon="logos:javascript"></iconify-icon> </li>
+                    <li>Astro <iconify-icon icon="devicon:astro"></iconify-icon></li>
+                    <li>React <iconify-icon icon="logos:react"></iconify-icon></li>
+                    <li>TailWind CSS <iconify-icon icon="logos:tailwindcss-icon"></iconify-icon></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </article>
+
+
+        </section>
+
+
+        <section>
+            <h2 class="h2">Preguntas frecuentes</h2>
+            <details>
+                <summary>Que estudios tienes?</summary>
+                <p>Ingenieria de Sistemas - Universidad O&M</p>
+            </details>
+            <details>
+                <summary>Cuales son tus hobbies</summary>
+                <p>Leer y jugar video juegos</p>
+            </details>
+            <details>
+                <summary>Que lenguajes de programacion conoces</summary>
+                <p>HTML, CSS, JavaScript</p>
+            </details>
+
+        </section>
+
+        <section class="py-10">
+            <article
+                >
+                <form action="#" class="w-full">
+                    <fieldset class="flex flex-col items-start justify-start [&>label]:py-2 [&>label]:pl-2 [&>label]:font-medium [&>input]:px-4 [&>input]:py-2 [&>input]:min-w-[260px]">
+                        <legend class="text-purple-800 h3">Informacion de Contacto</legend>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="" placeholder="Escribe tu nombre">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="" placeholder="Email">
+                        <label for="date">Fecha de Cita</label>
+                        <input type="date" name="date" id="">
+                    </fieldset>
+                    <fieldset class="flex flex-col items-start justify-start [&>label]:py-2 [&>label]:pl-2 [&>label]:font-medium [&>input]:px-4 [&>input]:py-2 [&>input]:min-w-[260px]">
+                        <legend class="text-purple-800 h3">Informacion Adicional</legend>
+                        <label for="tel">Telefono</label>
+                        <input type="number">
+                    </fieldset>
+                    <fieldset class="flex flex-col items-start justify-start [&>label]:py-2 [&>label]:pl-2 [&>label]:font-medium [&>input]:px-4 [&>input]:py-2 [&>input]:min-w-[260px]">
+                        <legend class="text-purple-800 h3">Otros?</legend>
+                        <label for="options">Por que quieres contactar?</label>
+                        <select name="options" id="">
+                            <option value="Trabajo">Trabajo</option>
+                            <option value="Duda">Duda</option>
+                            <option value="Mas Info">Mas Informacion</option>
+                        </select>
+                        <label for="terms">Acepta los terminos?
+                        <input type="checkbox" name="terms" id=""></label>
+                        <label for="question">Con que queja te puedo ayudar?</label>
+                        <input type="text" name="question" id="" >
+                        <button type="submit" class="px-5 py-3 mt-8 text-white transition-all duration-500 bg-transparent border border-white rounded-lg hover:bg-white hover:text-syke-500 hover:text-sky-500">Enviar Informacion</button>
+                </form>
+
+            </article>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+                
+        <section>
+            <h3>Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/G7VIHZdwd_M?si=nF-Uo92zxxPuDrnx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+       
+        <section>
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento <code>audio</code>.
+            </audio>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="script.js"></script>
+
+    <footer class="w-full bg-gray-500">
+        <p>Copyright 2024. Todos los derechos reservados.</p>
+        <a href="#">Escribememe</a>
+        <a href="#">Llamame</a>
+        <a href="#">WhatsApp</a>
+    </footer>
+</body>
+
+
+</html>
